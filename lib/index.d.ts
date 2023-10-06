@@ -540,6 +540,10 @@ declare namespace sharp {
          */
         convolve(kernel: Kernel): Sharp;
 
+        erode(width:number):Sharp;
+        
+        dilate(width:number):Sharp;
+
         /**
          * Any pixel value greather than or equal to the threshold value will be set to 255, otherwise it will be set to 0.
          * @param threshold a value in the range 0-255 representing the level at which the threshold will be applied. (optional, default 128)
