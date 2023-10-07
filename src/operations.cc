@@ -460,7 +460,7 @@ namespace sharp {
 
     return image.morph(
       mask,
-      VIPS_OPERATION_MORPHOLOGY_DILATE).invert();
+      VIPS_OPERATION_MORPHOLOGY_DILATE);
   }
 
   /*
@@ -471,6 +471,6 @@ namespace sharp {
 
     return image.morph(
       mask,
-      VIPS_OPERATION_MORPHOLOGY_ERODE).invert();
+      VIPS_OPERATION_MORPHOLOGY_ERODE);
   }
 }  // namespace sharp
